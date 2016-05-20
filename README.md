@@ -34,7 +34,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 - Clone the project
 - in the script "run_analysis.R" set your R working directory in the base directory of the project
-- Make sure that the data are placed in your working directory. Therefore unzip the file the data. The folder "UCI HAR Dataset"  containing the data must be located in your working directorx
+- Make sure that the data are placed in your working directory. Therefore unzip the data from the cousera course page. The folder "UCI HAR Dataset" that containing the data must be located in your working directory.
 - run the script
 - the script generates the cleaned data set in the folder "data"
 
@@ -43,22 +43,24 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ### Descriptive column
 
-New and clean columname are provided in the (manually provided) file "names.txt":
+New and clean columnnames are provided by the folloeing rules:
+- rename variables starting with "t" to "time"
+- rename variables starting with "f" to "freq"
+- replacing "-" by "_"
+- deleting "(" and ")"
 
 ### Read data
 
-Data are read in test and train data set. Ausiliary files are also read (Activities, Subjects, descriptive column names)
+Data are read in test and train data set. The corrseponding files for activities and subjects are also read.
 
 ### Merge test and training. Add descriptive activity names and subjects.
 
 Test and training data are merged as prescribed. Activities and Subjects are added.
 
-
 ### Choosing the column with mean and standard dev
 
 Extracts only the measurements on the mean and standard deviation for each measurement.
 Having already descriptively named the columns it is possible to extract the column with a couple of simple grep()
-
 
 ### Creating tidy data set
 
