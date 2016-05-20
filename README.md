@@ -34,9 +34,9 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 - Clone the project
 - in the script "run_analysis.R" set your R working directory in the base directory of the project
-- Make sure that the data are placed in your working directory
-- run the Script
-- the Script generates the cleaned data set in the folder "data"
+- Make sure that the data are placed in your working directory. Therefore unzip the file the data. The folder "UCI HAR Dataset"  containing the data must be located in your working directorx
+- run the script
+- the script generates the cleaned data set in the folder "data"
 
 ## Implementation
 
